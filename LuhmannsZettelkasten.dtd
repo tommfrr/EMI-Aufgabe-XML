@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE TEI [
+  <!ELEMENT TEI (front, back)>
+    <!ELEMENT front (teiHeader, body)> <!-- Vorderseite der Karte -->
+      <!ELEMENT teiHeader (fileNumber, fileName)> <!-- Kopf der Karte -->
+        <!ELEMENT fileNumber (#PCDATA)> <!-- Kartennummer -->
+        <!ELEMENT fileName (#PCDATA)> <!-- Überschrift/Titel der Karte -->
+      <!ELEMENT body (#PCDATA)> <!-- Inhalt der Karte/ Informationen -->
+    <!ELEMENT back(reference*)> <!-- Rückseite der Karte -->
+      <!ELEMENT reference (#PCDATA)> <!-- Verweise auf andere Karten -->
+]>
